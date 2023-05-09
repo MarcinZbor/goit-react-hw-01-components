@@ -24,3 +24,14 @@ function FriendsList({ friends }) {
 }
 
 export default FriendsList;
+
+FriendsList.prototype = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ),
+};
