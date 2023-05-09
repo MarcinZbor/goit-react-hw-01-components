@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function Statistics({ title, stats }) {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>Upload statsp</h2>
+      <h2 className={css.title}>Upload stats</h2>
 
       <ul className={css.stat_list}>
         {stats.map(stat => (
