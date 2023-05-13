@@ -15,7 +15,7 @@ function FriendsList({ friends }) {
         avatar={avatar}
       />
       )}
-      
+
     </ul>
   );
 }
