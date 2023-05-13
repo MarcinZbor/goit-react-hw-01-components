@@ -3,20 +3,19 @@ import css from './Friends.module.css';
 import PropTypes from 'prop-types';
 import { FriendsListItem } from './FriendsListItem/FriendsListItem';
 
-const FriendsList = ({ friends }) => {
+function FriendsList({ friends }) {
   return (
     <ul className={css.friendlist}>
-      {friends.map(({ avatar, name, isOnline, id }) => {
-        return 
-        (
+      {friends.map(({avatar,name,id,isOnline}) => 
+        
         <FriendsListItem 
-          key={id}
-          name={name}
-          isOnline={isOnline}
-          avatar={avatar}
-        />
-        )
-      })}
+        key={id}
+        name={name}
+        isOnline={isOnline}
+        avatar={avatar}
+      />
+      )}
+      
     </ul>
   );
 }
