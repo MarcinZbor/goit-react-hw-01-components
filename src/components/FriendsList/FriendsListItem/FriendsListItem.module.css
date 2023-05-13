@@ -1,0 +1,13 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: grey;
+  border-bottom: 1px solid black;
+}
+
+.name {
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+}
